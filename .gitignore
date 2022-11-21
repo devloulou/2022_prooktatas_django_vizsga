@@ -1,0 +1,5 @@
+my_blog/__pycache__/
+blog/__pycache__/
+blog/migrations/__pycache__/
+user_registration/__pycache__/
+user_registration/migrations/__pycache__/
