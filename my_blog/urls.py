@@ -19,17 +19,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from user_registration.views import register as register_view
-from user_registration.views import profile as profile_view
-
 urlpatterns = [
     path('', include('blog.urls')),
     path('admin/', admin.site.urls),
-    path('register/', register_view, name="register"),
-    path('profile/', profile_view, name="profile"),
-    path('login/', auth_views.LoginView.as_view(template_name='user_registration/login.html'), name="login"),
-    path('logout/', auth_views.LogoutView.as_view(template_name='user_registration/logout.html'), name="logout"),
-
+  
 ] 
 
 if settings.DEBUG:
